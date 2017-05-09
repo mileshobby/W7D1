@@ -30,10 +30,12 @@ const todosReducer = (state = initialState, action) => {
       });
       return newState;
     case RECEIVE_TODO:
+      // debugger
       merge(newState, state);
       newState[action.todo.id] = action.todo;
       return newState;
     case REMOVE_TODO:
+      // debugger
       merge(newState, state);
       delete( newState[action.id] );
       return newState;

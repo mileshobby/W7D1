@@ -9,7 +9,7 @@ const TodoList = ({todos, receiveTodo, removeTodo}) => (
         <TodoListItem
           removeTodo={removeTodo}
           todo={todo}
-          key={idx}
+          key={todo.id}
           receiveTodo={receiveTodo}
         />
       )}

@@ -44,7 +44,6 @@ class TodoListItem extends React.Component{
         <br></br>
         <button onClick={this.toggleHidden}>Toggle Details</button>
         { this.state.detail ? (<TodoDetailViewContainer todo={this.todo}/>) : ""}
-
       </li>
     );
   }
